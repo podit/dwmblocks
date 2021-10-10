@@ -1,3 +1,9 @@
+preceding spaces in icons used to separate X title area from status more cleanly, trailing space in the delimiter has been removed.
+
+uses partition labels for identification, set root and home filesystem labels to `rut` and `hom` respectively with the `e2label` command.
+
+currently assumes a laptop, displaying battery info, look into a separate desktop implementation.
+
 # dwmblocks
 Modular status bar for dwm written in c.
 # usage
