@@ -17,7 +17,7 @@ static const Block blocks[] = {
 
   // battery info
   // TODO: trim third value (Y) from remaining time (XX:XX:YY)
-  {" bat: ", "acpi -b | awk '/^Battery 0:/ {print $4\" \"$3\" \"$5 }' | sed s/,//g | sed s/Discharging/-/g | sed s/Charging/+/g | sed s/Unknown/u/g | sed s/Full/f/g", 30, 0},
+  {" bat: ", "acpi -b | awk '/^Battery 0:/ {print $4\" \"$3\" \"$5 }' | sed s/,//g | sed s/Discharging/-/g | sed s/Charging/+/g | sed s/Unknown/u/g | sed s/Full/f/g | sed s/f\" \"/f/g", 30, 0},
 
 	{" ", "date '+%b %d (%a) %H:%M'",					5,		0},
 };
