@@ -4,6 +4,7 @@ uses partition labels for identification, set root and home filesystem labels to
 
 currently assumes a laptop, displaying battery info, look into a separate desktop implementation.
 
+------------
 # dwmblocks
 Modular status bar for dwm written in c.
 # usage
